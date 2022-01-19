@@ -36,7 +36,7 @@ With `release_token`, you can see that I have stored `297297297` into the contra
 
 With `transfer`, you can see that the contract checked if sender's balance is less than the amount they send or not. If yes, it will quit executing by simply jumping to `eof` which  is the end of the program. Or else, it will get balance of sender and receiver and change them.
 
-### Deploy
+## Deploy
 Setup a JeChain node, and then paste this code at the bottom of `jenode.js`:
 ```js
 const contract = `SC
@@ -71,3 +71,9 @@ deployContract.sign(keyPair);
 
 sendTransaction(deployContract);
 ```
+
+### Deploy in mainnet/testnet
+JeChain currently doesn't have a public community to have a mainnet/testnet, but if you happen to find one, just simply connect to their nodes and deploy the contract.
+
+### Deploy in testing environment
+Just don't connect to any nodes and run the node in localhost :D.
